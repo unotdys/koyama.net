@@ -1,0 +1,37 @@
+<script language="JavaScript">
+
+var bannerImg = new Array();
+  bannerImg[0]="ryo1.jpg";
+  bannerImg[1]="ryo2.jpg";
+  bannerImg[2]="ryo3.jpg";
+  bannerImg[3]="ryo4.jpg";
+
+var newBanner = 0
+var totalBan = bannerImg.length
+
+function cycleBan() {
+  newBanner++
+  if (newBanner == totalBan) {
+    newBanner = 0
+  }
+  document.banner.src=bannerImg[newBanner]
+  setTimeout("cycleBan()", 5*1000)
+}
+window.onload=cycleBan;
+
+</script>
+
+<html>
+<body>
+
+<div align="center">
+<img src="banner1.jpg" name="banner">
+
+</div>
+
+
+
+</body>
+</html>
+
+	

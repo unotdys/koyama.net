@@ -1,0 +1,52 @@
+<script language="JavaScript">
+
+var ryoImg = new Array();
+  ryoImg[0]="ryo_3.jpg";
+  ryoImg[1]="ryo_k.jpg";
+  ryoImg[2]="ryo_1.jpg";
+  ryoImg[3]="ryo_2nd.jpg";
+  ryoImg[4]="ryo_3rd.jpg";
+  ryoImg[5]="ryo_4th.jpg";
+  ryoImg[6]="ryo_5th.jpg";
+  ryoImg[7]="ryo_6th.jpg";
+  ryoImg[8]="ryo_7th.jpg";
+  ryoImg[9]="ryo_8th.jpg";
+  ryoImg[10]="ryo_9th.jpg";
+  ryoImg[11]="ryo_10th.jpg";
+  ryoImg[12]="ryo_11th.jpg";
+  ryoImg[13]="ryo_12th.jpg";
+  ryoImg[14]="ryo_20s.jpg";
+  ryoImg[15]="ryo_30s.jpg";
+  ryoImg[16]="ryo_40s.jpg";
+  ryoImg[17]="ryo.jpg";
+
+
+var newRyo = 0
+var totalRyo = RyoImg.length
+
+function cycleRyo() {
+  newRyo++
+  if (newRyo == totalRyo) {
+    newRyo = 0
+  }
+  document.Ryo.src=RyoImg[newRyo]
+  setTimeout("cycleRyo()", 5*1000)
+}
+window.onload=cycleRyo;
+
+</script>
+
+<html>
+<body>
+
+<div align="center">
+<img src="ryo0.jpg" name="ryo">
+
+</div>
+
+
+
+</body>
+</html>
+
+	

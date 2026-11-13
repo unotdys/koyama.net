@@ -1,0 +1,39 @@
+<script language="JavaScript">
+
+var ryoImg = new Array();
+  ryoImg[0]="ryo1.jpg";
+  ryoImg[1]="ryo2.jpg";
+  ryoImg[2]="ryo3.jpg";
+  ryoImg[3]="ryo4.jpg";
+
+
+
+var newRyo = 0
+var totalRyo = RyoImg.length
+
+function cycleRyo() {
+  newRyo++
+  if (newRyo == totalRyo) {
+    newRyo = 0
+  }
+  document.Ryo.src=RyoImg[newRyo]
+  setTimeout("cycleRyo()", 1000)
+}
+window.onload=cycleRyo;
+
+</script>
+
+<html>
+<body>
+
+<div align="center">
+<img src="ryo1.jpg" name="ryo" width="100" height="130">
+
+</div>
+
+
+
+</body>
+</html>
+
+	
